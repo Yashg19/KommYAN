@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Kommunity</string>
+    <string name="title_activity_login">Login</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_id">1466870786936947</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_test">testActivity</string>
+    <string name="title_activity_dashboard">dashboard</string>
+
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_title_tile_pop_up">TitleTilePopUp</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_sign_up">SignUp</string>
+    <string name="title_activity_create_account">CreateAccount</string>
+    <string name="title_activity_register_acc">register_acc</string>
+</resources>

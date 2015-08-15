@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="50"
+        tools:context="com.kommunity.MapsActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:background="#ff373737"
+        android:weightSum="1">
+        android:showDividers="middle"
+        android:divider="@drawable/bgap"
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Spread The Word"
+            android:id="@+id/button3"
+            android:onClick="savedata"
+            android:layout_row="6"
+            android:layout_column="0"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="#96373737"
+            android:textColor="#fff9f9f9" />
+
+        <Button
+            android:layout_width="86dp"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Urgent"
+            android:id="@+id/button2"
+            android:layout_gravity="right"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="#96373737"
+            android:textColor="#fff9f9f9" />
+
+        <Space
+            android:layout_width="20px"
+            android:layout_height="20px"
+            android:layout_above="@+id/button3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/space" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:hint="Name your alert"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/button2"
+            android:layout_toStartOf="@+id/button2"
+            android:textColor="#fff9f9f9"
+            android:textColorHint="#fff9f9f9"
+            android:layout_alignBottom="@+id/button2"
+            android:background="@color/primary_text_disabled_material_light" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText2"
+            android:hint="Briefly describe what's going on...."
+            android:textColor="#fff9f9f9"
+            android:textColorHint="#fff9f9f9"
+            android:gravity="center|top"
+            android:layout_alignTop="@+id/imageButton"
+            android:layout_toRightOf="@+id/imageButton"
+            android:layout_above="@+id/button3"
+            android:layout_alignRight="@+id/button2"
+            android:layout_alignEnd="@+id/button2"
+            android:background="@color/primary_dark_material_dark"
+            android:autoText="false" />
+
+        <ImageButton
+            android:layout_width="65dp"
+            android:layout_height="160dp"
+            android:id="@+id/imageButton"
+            android:src="@drawable/camera"
+            android:maxHeight="5dp"
+            android:maxWidth="5dp"
+            android:minWidth="5dp"
+            android:layout_alignBottom="@+id/space"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>
